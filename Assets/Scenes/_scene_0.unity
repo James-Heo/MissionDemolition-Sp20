@@ -337,6 +337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 6977394723453805344, guid: ebd7024102ed56a46b0d53b4e0f25cb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd7024102ed56a46b0d53b4e0f25cb9, type: 3}
 --- !u!4 &91365137 stripped
@@ -999,6 +1004,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 664756458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &710077800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6491669231171185312, guid: eeed099d5fd130e4eb40ad648e5da4b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5567075608400439500}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &710077804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710077800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61a22d47f2cb7e479a762f9a9ac8dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &926618468
 PrefabInstance:
   m_ObjectHideFlags: 0
