@@ -18,14 +18,15 @@ using UnityEngine.UI;
 		public Text uitButton; //	The	Text	on	UIButton_View
 		public Vector3 castlePos; //	The	place	to	put	castles
 		public GameObject[] castles;            //	An	array	of	the	castles
-		[Header("Set	Dynamically")]
+		
+	[Header("Set Dynamically")]
 		public int level;                   //	The	current	level
 		public int levelMax;        //	The	number	of	levels
 		public int shotsTaken;
 		public GameObject castle;               //	The	current	castle
 		public GameMode mode = GameMode.idle;
 		public string showing = "Show	Slingshot"; //FollowCam mode
-					void Start()
+		void Start()
 		{
 			S = this; //	Define	the	Singleton
 			level = 0;
@@ -50,7 +51,7 @@ using UnityEngine.UI;
 			castle.transform.position = castlePos;
 			shotsTaken = 0;
 			//	Reset	the	camera
-			SwitchView("wShow	Both");
+			SwitchView("wShow Both");
 			ProjectileLine.S.Clear();
 			//	Reset	the	goal
 			Goal.goalMet = false;
@@ -60,7 +61,7 @@ using UnityEngine.UI;
 		void UpdateGUI()
 		{
 			//	Show	the	data	in	the	GUITexts
-			uitLevel.text = "Level:	" + (level + 1) + "of	" + levelMax;
+			uitLevel.text = "Level:	" + (level + 1) + " of " + levelMax;
 			uitShots.text = "Shots Taken: " + shotsTaken;
 		}
 		void Update()
@@ -92,9 +93,9 @@ using UnityEngine.UI;
 			{
 				eView = uitButton.text;
 			}
-			showing = eView;
+		showing = eView;
 			switch (showing)
-			{
+		{
 				case "Show	Slingshot":
 					FollowCam.POI = null;
 					uitButton.text = "Show	Castle";
