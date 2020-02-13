@@ -181,7 +181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b38e25080f8f4448a41ff9d8cf6623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabProjectile: {fileID: 2260493963122848505, guid: 7d30b929922d15947a9515daf07bb19d,
+    type: 3}
   launchPoint: {fileID: 0}
+  launchPos: {x: 0, y: 0, z: 0}
+  projectile: {fileID: 0}
+  aimingMode: 0
 --- !u!1 &299302302
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1251860171
 Transform:
   m_ObjectHideFlags: 0
