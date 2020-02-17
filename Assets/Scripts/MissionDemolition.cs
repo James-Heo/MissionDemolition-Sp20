@@ -51,7 +51,7 @@ using UnityEngine.UI;
 			castle.transform.position = castlePos;
 			shotsTaken = 0;
 			//	Reset	the	camera
-			SwitchView("wShow Both");
+			SwitchView("Show Both");
 			ProjectileLine.S.Clear();
 			//	Reset	the	goal
 			Goal.goalMet = false;
@@ -96,17 +96,17 @@ using UnityEngine.UI;
 		showing = eView;
 			switch (showing)
 		{
-				case "Show	Slingshot":
+				case "Show Slingshot":
 					FollowCam.POI = null;
-					uitButton.text = "Show	Castle";
+					uitButton.text = "Show Castle";
 					break;
-				case "Show	Castle":
+				case "Show Castle":
 					FollowCam.POI = S.castle;
-					uitButton.text = "Show	Both";
+					uitButton.text = "Show Both";
 					break;
-				case "Show	Both":
-					FollowCam.POI = GameObject.Find("ViewBoth");
-					uitButton.text = "Show	Slingshot";
+				case "Show Both":
+					FollowCam.POI = GameObject.Find("View Both");
+					uitButton.text = "Show Slingshot";
 					break;
 			}
 		}
