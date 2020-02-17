@@ -105,7 +105,7 @@ using UnityEngine.UI;
 					uitButton.text = "Show Both";
 					break;
 				case "Show Both":
-					FollowCam.POI = GameObject.Find("View Both");
+					FollowCam.POI = GameObject.Find("ViewBoth");
 					uitButton.text = "Show Slingshot";
 					break;
 			}
